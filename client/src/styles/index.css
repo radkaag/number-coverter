@@ -1,6 +1,6 @@
 body {
   margin: 15px;
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 .container {
@@ -13,13 +13,21 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  color: #57626c;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 11px;
 }
 
 .container--dial {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 25px;
-  background-color: #333333;
+  background-color: #292932;
   border-radius: 4px;
 }
 
@@ -41,31 +49,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90px;
-  height: 50px;
-  margin: 5px 0;
+  width: 70px;
+  height: 70px;
+  margin: 5px 10px 25px;
   text-align: center;
   color: #fff;
-  background-color: #eb9d08;
-  border: 1px solid #126d7f;
+  background-color: #2a2a32;
+  border: 1px solid #d9e2e438;
   border-radius: 50%;
-  box-shadow: inset 8px 6px #f5dcae;
   user-select: none;
   cursor: pointer;
 }
 
-.dial-button:active {
-  box-shadow: inset 8px 6px #795f2e;
+.dial-button:hover {
+  background-color: #3e3e3e;
+  box-shadow: 1px 1px 1px #ccc;
 }
 
 .dial-button--disabled {
-  background-color: #d8bf90;
+  background-color: #3e3e3e;
   cursor: default;
+  color: #8c8b89f;
 }
 
 .dial-button__title {
   display: block;
   font-weight: 700;
+  font-size: 20px;
 }
 
 .dial-button__subtitle {
@@ -77,6 +87,7 @@ body {
   height: 38px;
   padding: 3px 15px;
   margin-bottom: 14px;
+  font-family: monospace;
   border: 1px solid #e9eef2;
   text-align: center;
   border-radius: 3px;
@@ -88,6 +99,7 @@ body {
   padding: 10px;
   border: none;
   color: #57626c;
+  font-family: monospace;
   background-color: transparent;
   border-radius: 4px;
   outline: none;

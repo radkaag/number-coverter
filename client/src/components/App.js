@@ -39,8 +39,14 @@ const App = props => {
     ));
   };
 
-  return (
+  return [
     <div className="container container--app">
+      <p className="intro-text">Try to type of these words:</p>
+      <p className="intro-text">
+        eye, hair, eyebrow, lungs, mouth, skull, stomach, tendon, sacrum,
+        throat, brain, blood, kidney, tooth, elbow, knee, bladder, belly, ankle,
+        adenoids, lip
+      </p>
       <input
         className="input"
         placeholder="Use dial to enter a number"
@@ -58,7 +64,7 @@ const App = props => {
       <div className="container container--dial">{renderPhoneButtons()}</div>
       <div className="output">{convertion}</div>
     </div>
-  );
+  ];
 };
 
 App.propTypes = {
