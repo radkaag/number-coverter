@@ -35,7 +35,7 @@ yarn start
 
 ## Cypress test
 
-Run tests from `root` directory with command:
+Run tests from `client` directory with command:
 
 ```
 ./node_modules/.bin/cypress open

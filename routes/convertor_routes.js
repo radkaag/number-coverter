@@ -18,8 +18,6 @@ const crossProduct = (a, b) => b.reduce((arr, b) => arr.concat(a.map(a => a + b)
 module.exports = function(app) {
     app.get('/convertor', (req, res) => {
         try {
-            res.header("Access-Control-Allow-Origin", "*");
-            res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
             const value = req.query.value;
             const digits = value.split('');
@@ -35,6 +33,7 @@ module.exports = function(app) {
 
             const result = words.join(', ') || `No words from human body vocabulary matched value of ${value}`;
 
+            console.log(result);
             res.end(result);
         } catch(e) {
             res.end('Some error occured');
